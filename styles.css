@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@100;300;500&family=Lora&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 40px !important; /* This pushes everything down 10px */
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 500;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+.header-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header-content {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-bottom: 0 !important; /* Removed bottom margin completely */
+    margin-top: 40px !important; /* Increased from 40px */
+}
+
+.logo-text-wrapper {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.logo {
+    height: 129px !important;
+    width: auto !important;
+    margin-right: 50px !important;
+}
+
+.offerings {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    padding: 2rem 0 !important;
+    max-width: 1100px !important; /* Slightly reduced max-width */
+    margin: 0 auto !important;
+}
+
+.offering {
+    flex: 1 !important;
+    max-width: 300px;
+    padding: 0 10px !important; /* Add some padding inside each offering */
+    text-align: left;
+    font-family: 'Lora', serif;
+    font-weight: 400; /* Regular weight */
+}
+
+.offerings .offering,
+.offerings .offering h2,
+.offerings .offering h3,
+.offerings .offering p {
+    font-family: 'Lora', serif !important;
+}
+
+.enterprise-custody {
+    flex: 2 !important; /* Keep this if you want it wider than the others */
+    width: 300px !important; /* Adjusted max-width */
+    padding: 0 5px !important; /* Reduced padding for enterprise-custody */
+    text-align: left !important;
+}
+
+.offering-separator {
+    width: 2px !important;
+    background-color: #333 !important;
+    align-self: stretch !important;
+    margin: 0 10px !important; /* Further reduced horizontal margin */
+}
+
+.cta {
+    text-align: center;
+    padding: 2rem;
+}
+
+.waitlist-button {
+    background-color: #FFE614;
+    font-family: 'Darker Grotesque', sans-serif !important;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 50px !important; /* Increased from 1.2rem to 59px */
+    cursor: pointer;
+    color: black;
+    border-radius: 100px !important;
+    line-height: 0.96; /* Adjust this value to move text up by approximately 2px */
+}
+
+.magnolia-title {
+    font-family: 'Darker Grotesque', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 155px !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important; /* Removed all padding */
+    line-height: 1 !important; /* Adjust this value to fine-tune the spacing */
+    margin-bottom: 20px !important; /* Increased from 20px */
+}
+
+.offering-title,
+.offering-text {
+    font-family: Arial, sans-serif !important; /* This should change the font for offering copy */
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .offerings {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offering {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .enterprise-custody {
+        order: -1;
+    }
+
+    .offering-separator {
+        height: 2px;
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    .cta {
+        padding: 1rem;
+    }
+
+    .magnolia-title {
+        font-size: 15vw; /* Larger relative size on smaller screens */
+    }
+
+    .header-content {
+        padding-left: 10px; /* Less padding on smaller screens */
+    }
+
+    .logo {
+        width: 40px; /* Smaller logo */
+        margin-right: 30px; /* Less space between logo and text */
+    }
+
+    .cypher-punks-trust {
+        font-size: 18px; /* Smaller font size */
+    }
+}
+
+.cypher-punks-trust {
+    font-family: 'Darker Grotesque', sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 28px !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+}
+
+.built-by {
+    /* Copy relevant styles from .offering here */
+    flex: 1 !important;
+    max-width: 300px;
+    padding: 0 5px !important; /* Reduced padding inside each offering */
+    text-align: left;
+}
+
+.built-by h2 {
+    /* Styles for the heading inside .built-by */
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    /* Add any other specific styles you want for this heading */
+}
+
+.bitcoin-and-everything-else .custody-copy p {
+    text-align: left !important;
+    width: 300px !important;
+    margin: 0 !important; /* Remove auto margin to align left */
+}
+
+.offerings > div:first-child p {
+    text-align: left !important;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .logo {
+        height: 100px !important; /* Smaller logo for mobile */
+        margin-right: 0 !important;
+    }
+
+    .cypher-punks-trust {
+        font-size: 20px !important; /* Smaller font size */
+        text-align: center !important;
+    }
+
+    .magnolia-title {
+        font-size: 80px !important; /* Smaller font size for mobile */
+    }
+
+    .offerings {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 2rem 20px !important; /* Add horizontal padding */
+    }
+
+    .bitcoin-and-everything-else,
+    .enterprise-custody,
+    .built-by {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+        margin-bottom: 30px !important;
+    }
+
+    .offering-separator {
+        display: none !important; /* Hide dividers on mobile */
+    }
+
+    /* Add padding to individual sections */
+    .bitcoin-and-everything-else,
+    .enterprise-custody,
+    .built-by {
+        padding: 0 20px !important;
+    }
+
+    /* Ensure text within sections is not right up against the edges */
+    .bitcoin-and-everything-else p,
+    .enterprise-custody p,
+    .built-by p,
+    .bitcoin-and-everything-else h2,
+    .enterprise-custody h2,
+    .built-by h2,
+    .bitcoin-and-everything-else h3,
+    .enterprise-custody h3,
+    .built-by h3 {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* Adjust the custody copy width for mobile */
+    .custody-copy {
+        width: 100% !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+    }
+
+    /* Ensure the header content has padding */
+    .header-content {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    /* Adjust the waitlist button to have some margin */
+    .waitlist-button {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        padding: 1rem 2rem!important;
+        font-size: 30px !important;
+    }
+
+    .header-content {
+        margin-bottom: 20px !important; /* Reduce space below the header */
+    }
+
+    .magnolia-title {
+        margin-bottom: 10px !important; /* Reduce space below the Magnolia title */
+    }
+
+    .offerings {
+        padding-top: 10px !important; /* Reduce top padding of offerings container */
+    }
+
+    .bitcoin-and-everything-else {
+        margin-top: 0 !important; /* Remove top margin of the first offering */
+    }
+
+    /* Optionally, if you want to reduce space between all sections */
+    .bitcoin-and-everything-else,
+    .enterprise-custody,
+    .built-by {
+        margin-bottom: 20px !important; /* Reduce bottom margin of each section */
+    }
+
+    /* If you have any top padding or margin on the first offering, remove it */
+    .offerings > div:first-child {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .header-container {
+        padding: 0px
+    };
+}
