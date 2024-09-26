@@ -90,15 +90,7 @@ header {
 }
 
 .waitlist-button {
-    background-color: #FFE614;
-    font-family: 'Darker Grotesque', sans-serif !important;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 50px !important; /* Increased from 1.2rem to 59px */
-    cursor: pointer;
-    color: black;
-    border-radius: 100px !important;
-    line-height: 0.96; /* Adjust this value to move text up by approximately 2px */
+  font-family: "Darker Grotesque", sans-serif !important;
 }
 
 .magnolia-title {
