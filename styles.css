@@ -78,10 +78,10 @@ header {
 }
 
 .offering-separator {
-    width: 2px !important;
+    width: 15px !important;
     background-color: #333 !important;
     align-self: stretch !important;
-    margin: 0 10px !important; /* Further reduced horizontal margin */
+    margin: 0 40px !important; /* Further reduced horizontal margin */
 }
 
 .cta {
