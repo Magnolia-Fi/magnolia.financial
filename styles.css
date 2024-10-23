@@ -87,6 +87,10 @@ header {
 .cta {
     text-align: center;
     padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
 }
 
 .waitlist-button {
@@ -133,6 +137,7 @@ header {
 
     .cta {
         padding: 1rem;
+        flex-direction: column;
     }
 
     .magnolia-title {
@@ -301,17 +306,4 @@ header {
         padding: 0px
     };
 
-}
-
-.docs-link {
-    text-decoration: underline; /* This will underline the link */
-    color: inherit; /* Optional: keeps the link color consistent with surrounding text */
-}
-
-/* Desktop Styles */
-@media screen and (min-width: 769px) {
-
-    .docs-link {
-        margin-left: 20px; /* Space between the link and the button */
-    }
 }
