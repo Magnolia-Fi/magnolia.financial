@@ -85,8 +85,13 @@ header {
 }
 
 .cta {
+    display: flex;
     text-align: center;
     padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
 }
 
 .waitlist-button {
@@ -133,6 +138,7 @@ header {
 
     .cta {
         padding: 1rem;
+        flex-direction: column;
     }
 
     .magnolia-title {
@@ -300,4 +306,5 @@ header {
     .header-container {
         padding: 0px
     };
+
 }
