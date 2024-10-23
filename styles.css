@@ -300,4 +300,18 @@ header {
     .header-container {
         padding: 0px
     };
+
+}
+
+.docs-link {
+    text-decoration: underline; /* This will underline the link */
+    color: inherit; /* Optional: keeps the link color consistent with surrounding text */
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 769px) {
+
+    .docs-link {
+        margin-left: 20px; /* Space between the link and the button */
+    }
 }
